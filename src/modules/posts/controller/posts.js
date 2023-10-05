@@ -66,7 +66,7 @@ return res.status(201).json({ message: "Done", updatedThePost })
 
 })
 
- export const allpostsz = asyncHandler(async  (req, res,next) => {
+ export const allposts = asyncHandler(async  (req, res,next) => {
 
 
 
@@ -77,7 +77,7 @@ return res.status(201).json({ message: "Done", updatedThePost })
   return res.status(200).json({ message: "Done", postList })
 })
 
-export const allposts = asyncHandler(async  (req, res,next) => {
+export const allpostsz = asyncHandler(async  (req, res,next) => {
 
   const startOfYesterday = new Date();
   startOfYesterday.setDate(startOfYesterday.getDate() - 1);
